@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label for="userString">Enter a string: </label><br>
+    <input type="text" id="userString" [(ngModel)]="value">
+    <br><br>   
+    <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" class="custom-control-input" name="reverse" [(ngModel)]="radioValue" value="UsingSplit">Using Split and Reverse
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" class="custom-control-input" name="reverse" [(ngModel)]="radioValue" value="WithoutUsingSplit">Without using Split and Reverse
+            </label>
+          </div>
+    <br><br>
+    <button (click)="onReverse()" class="btn btn-primary">Reverse String</button>
+    <br><br>
+    <label for="reversedString">Reversed String: </label><br>
+    <input type="text" id="reversedString" value={{reversedValue}}>
+</div>
+
+
+

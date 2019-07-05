@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label for="input">Enter a string array :</label> <br>
+  <input type="text" id="input" name ='data' [(ngModel)]='data'>
+  <br><br>
+  <button class="btn btn-primary" (click)='onCountChar()'>Count Character</button>
+  <br><br>
+  <label>No.of character count: </label>
+  <br>
+  <div *ngFor="let data of output">
+    {{data}}
+  </div>
+</div>
